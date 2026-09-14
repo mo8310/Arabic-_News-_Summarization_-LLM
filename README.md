@@ -153,9 +153,10 @@ POST /api/summarize
   ]
 }
 ```
+<img width="1776" height="835" alt="Screenshot 2026-09-14 134913" src="https://github.com/user-attachments/assets/e826bd75-151c-4cd1-934d-3fb9a8bd6b7c" />
+
+<img width="1224" height="828" alt="image" src="https://github.com/user-attachments/assets/525c1241-e4ed-4a89-ad4e-ab534fda0ed9" />
+
+<img width="925" height="713" alt="Screenshot 2026-09-14 135041" src="https://github.com/user-attachments/assets/1ee0ab34-b5ad-4af1-a4dc-65cfbac4a621" />
 
 ---
-
-## 👨‍💻 Author
-
-Built as a showcase of end-to-end AI product development—spanning model fine-tuning, backend engineering, and frontend UI design. Feel free to explore the code, experiment with the inference APIs, or use the UI to summarize Arabic news instantly!
