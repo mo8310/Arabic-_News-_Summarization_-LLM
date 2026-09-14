@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:8000/api
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./model:/model:ro
+    environment:
+      - BASE_MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct
+      - ADAPTER_MODEL_PATH=/model
+      - DEVICE=cpu # Use 'cuda' and uncomment deploy block for GPU support
+      - FRONTEND_URL=http://localhost:3000
+    # Uncomment the following to enable GPU support if nvidia-docker is installed
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
