@@ -8,10 +8,4 @@ venv/
 .DS_Store
 
 # Large AI Models & Adapters
-model/
-models/
-*.safetensors
-*.bin
-*.pt
-*.pth
-*.gguf
+# (Removed to allow uploading small placeholder models to GitHub)
